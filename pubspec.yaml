@@ -1,0 +1,52 @@
+name: devforge_mobile
+description: "App móvil informativa de DevForge AI — observación del proyecto (CU10/CU15/CU22)."
+publish_to: 'none'
+version: 0.3.0+3
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  # ============================================================
+  # Estado (Riverpod)
+  # ============================================================
+  flutter_riverpod: ^2.6.1
+
+  # ============================================================
+  # Red (HTTP + conectividad)
+  # ============================================================
+  dio: ^5.7.0
+  connectivity_plus: ^6.1.0
+
+  # ============================================================
+  # Almacenamiento seguro del token
+  # ============================================================
+  flutter_secure_storage: ^9.2.2
+
+  # ============================================================
+  # Router
+  # ============================================================
+  go_router: ^14.6.2
+
+  # ============================================================
+  # UI / utilidades
+  # ============================================================
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/

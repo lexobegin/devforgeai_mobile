@@ -1,0 +1,74 @@
+# ============================================================
+# DevForge AI Mobile — .gitignore
+# ============================================================
+
+# --- Flutter/Dart ---
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+scripts/
+
+# --- Generación de código ---
+*.g.dart
+*.freezed.dart
+*.gr.dart
+*.mocks.dart
+lib/generated/
+
+# --- Android ---
+android/.gradle/
+android/.idea/
+android/local.properties
+android/key.properties
+android/app/keystore.jks
+android/app/upload-keystore.jks
+*.jks
+*.keystore
+
+# --- iOS ---
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Runner/GeneratedPluginRegistrant.*
+
+# --- VSCode / IDE ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# --- Entorno / secretos ---
+.env
+.env.*
+!.env.example
+!.env.produccion
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Cobertura ---
+coverage/
+
+# --- Modelos de IA (no se versionan; se cargan por separado) ---
+assets/models/*.tflite
+assets/models/*.onnx
+
+# --- Keystore firmas ---
+*.jks
+*.keystore
